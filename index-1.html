@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- // <h1 id="h1"onclick="alert('hi')">cick here</h1>
+    <h1 ondblclick="alert('hi')">cick here</h1>
+    <h1 >click here</h1> -->
+  <!-- <button id="h1">click</button> -->
+  <h1>Changing image by clicking on button</h1>
+  <div></div>
+  <button>Click</button>
+
+  <!-- <img   src="./bulb.jpg" alt="" width="100px"> -->
+
+    <script>
+          
+    // h1.style.color="red" 
+
+    
+        let btn=document.getElementsByTagName("button")
+        console.log(btn[0]);
+        btn[0].style.color="red";
+        
+
+        btn[0].addEventListener("click",()=>{
+            let div=document.getElementsByTagName("div")
+            let img=document.createElement("img");
+            img.setAttribute("src","./moon.jpg")
+            img.style.width="400px";
+            div[0].appendChild(img)
+
+            img.addEventListener('click',myFunction)
+
+           function myFunction(){
+            img.setAttribute('src',"./water.jpg")
+
+           }
+        
+            
+            
+       
+           
+        })
+       
+       
+    </script>
+
+
+
+    </script>
+</body>
+</html>
