@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domtasks</title>
+</head>
+<body>
+    <center><h1>Dom Tasks</h1></center>
+    <a href="./index-1.html"><h1>Task-1</h1></a>
+    <a href="./index-2.html"><h1>Task-2</h1></a>
+
+    <button>back</button>
+    <script>
+        let btn=document.getElementsByTagName("button");
+btn[0].addEventListener("click",()=>{
+    window.history.back()
+})
+    </script>
+</body>
+</html>
